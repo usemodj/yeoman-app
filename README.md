@@ -7,6 +7,7 @@ First, you'll need to install yo and other required tools:
 $ npm install -g yo
 
 If you are using npm 1.2.10 or above, this will also automatically install grunt and bower for you. If you're on an older version of npm, you will need to install them manually:
+
 // For npm versions < 1.2.10. 
 
 $ npm install -g grunt-cli bower
@@ -29,9 +30,13 @@ Some generators can also be used to scaffold further pieces of your application 
 In the AngularJS framework, for example, your application is made up of a number of pieces including controllers, directives and filters. You can actually scaffold out any of these pieces (and more) during your development workflow as shown below:
 
 $ yo angular:controller myController
+
 $ yo angular:directive myDirective
+
 $ yo angular:filter myFilter
+
 $ yo angular:service myService
+
 
 Each framework generator has further documentation available noting what sub-generators it supports.
 
@@ -42,16 +47,20 @@ Bower is a package manager for the web which allows you to easily manage depende
 Managing packages using Bower can be done using the following commands:
 
 //# Search for a dependency in the Bower registry.
-$ bower search <dep>
+
+$ bower search [dep]
 
 //# Install one or more dependencies.
-$ bower install <dep>..<depN>
+
+$ bower install [dep]..[depN]
 
 //# List out the dependencies you have installed for a project.
+
 $ bower list
 
 //# Update a dependency to the latest version available.
-$ bower update <dep>
+
+$ bower update [dep]
 
 
 # GRUNT
